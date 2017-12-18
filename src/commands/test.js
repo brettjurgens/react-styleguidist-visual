@@ -12,6 +12,7 @@ const testSchema = joi
     url: joi.string().required(),
     dir: joi.string(),
     filter: joi.array().items(joi.string()),
+    reject: joi.array().items(joi.string()),
     threshold: joi
       .number()
       .min(0)
